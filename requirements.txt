@@ -2,4 +2,4 @@ pandas
 numpy
 matplotlib
 pickle5
-stramlit
+streamlit
