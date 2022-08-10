@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import pickle
 
-model = pickle.load(open('C:\AI Projects\Diabetes classification using decision tree'),'rb')
+model = pickle.load(open('Diabetes Classification.sav'),'rb')
 
 st.title("Diabetes Testing System")
 st.write("Do you want to test whether you have diabetes or not?")
