@@ -1,5 +1,5 @@
 pandas
 numpy
 matplotlib
-pickle
+pickle5
 stramlit
