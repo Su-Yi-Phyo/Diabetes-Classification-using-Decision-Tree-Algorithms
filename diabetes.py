@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle 
+import joblib 
 
-model = pickle.load(open('Diabetes Classification.sav','rb'))
+model = joblib.load'Diabetes Classification.sav')
 
 st.markdown(
   f"""
