@@ -13,7 +13,8 @@ st.markdown(
         background-image: url(‘https://www.news-medical.net/image.axd?picture=2019%2F8%2F%40shutterstock_1182539971.jpg’);
         }
         </style>
-    """
+    """,
+    unsafe_allow_html=True
 )
 
 st.title("Diabetes Testing System")
