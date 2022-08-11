@@ -6,16 +6,18 @@ import pickle
 
 ##model = pickle.load(open('Diabetes Classification.sav'),'rb')
 
-st.markdown(
-    """
-        <style>
-        p {
-        background-image: url(‘https://www.news-medical.net/image.axd?picture=2019%2F8%2F%40shutterstock_1182539971.jpg’);
-        }
-        </style>
-    """,
-    unsafe_allow_html=True
-)
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
 st.title("Diabetes Testing System")
 st.write("Do you want to test whether you have diabetes or not?")
