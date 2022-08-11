@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import pickle
 
-model = pickle.load(open('Diabetes Classification.sav'),'rb')
+##model = pickle.load(open('Diabetes Classification.sav'),'rb')
 
 st.title("Diabetes Testing System")
 st.write("Do you want to test whether you have diabetes or not?")
@@ -20,9 +20,9 @@ submit = st.button("Submit")
 
 df=pd.dataframe{glucose,bloodpressure,skin,insulin,predigree,age}
 
-result=model.predict(df)
+##result=model.predict(df)
 
-if result==0:
-    st.write("You don't have diabetes. Congratulations!")
-else:
-    st.write("You have diabetes. Take care.")
+##if result==0:
+    ##st.write("You don't have diabetes. Congratulations!")
+##else:
+    ##st.write("You have diabetes. Take care.")
