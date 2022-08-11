@@ -35,8 +35,8 @@ df=pd.DataFrame({'Pregnancies': pregnant, 'Glucose': glucose, 'BloodPressure': b
 result=model.predict(df)
 
 if result == [0]:
-  st.write('You do not have diabetes. Congratulations!')
+  st.markdown(f'<h1 style="color:green;font-size:24px;">You do not have diabetes. Congratulations!</h1>', unsafe_allow_html=True)
 elif result == [1]:
-  st.write('You have diabetes. Take care!')
+  st.markdown(f'<h1 style="color:green;font-size:24px;">You have diabetes. Take care!</h1>', unsafe_allow_html=True)
 else:
-  st.write('Cannot define')
+  st.markdown(f'<h1 style="color:green;font-size:24px;">Cannot define</h1>', unsafe_allow_html=True)
