@@ -36,7 +36,10 @@ result=model.predict(df)
 
 if result == [0]:
   st.markdown(f'<h1 style="color:green;font-size:24px;">You do not have diabetes. Congratulations!</h1>', unsafe_allow_html=True)
+  st.image('https://web-static.wrike.com/cdn-cgi/image/width=900,format=auto/blog/content/uploads/2019/01/Fostering_Happiness_What_Makes_Employees_Thrive_1.jpg?av=8f66393167af833aee0ca8f0f8ed48b9')
 elif result == [1]:
   st.markdown(f'<h1 style="color:red;font-size:24px;">You have diabetes. Take care!</h1>', unsafe_allow_html=True)
+  st.write('Recommendation for your meal')
+  st.image('https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/03/diabetes-diet-1296x1281-body-1-1024x1013.png?w=1155&h=2730')
 else:
   st.markdown(f'<h1 style="color:gray;font-size:24px;">Cannot define</h1>', unsafe_allow_html=True)
