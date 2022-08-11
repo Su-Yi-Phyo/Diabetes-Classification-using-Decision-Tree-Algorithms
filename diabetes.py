@@ -34,7 +34,4 @@ df=pd.DataFrame({'Pregnancies': pregnant, 'Glucose': glucose, 'BloodPressure': b
 
 result=model.predict(df)
 
-if result==0:
-    st.write("You don't have diabetes. Congratulations!")
-else:
-    st.write("You have diabetes. Take care.")
+
