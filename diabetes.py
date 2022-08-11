@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import pickle
 
-##model = pickle.load(open('Diabetes Classification.sav'),'rb')
+model = pickle.load(open('Diabetes Classification.sav'),'rb')
 
 st.markdown(
   f"""
