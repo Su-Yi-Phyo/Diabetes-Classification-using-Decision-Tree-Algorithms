@@ -30,9 +30,9 @@ submit = st.button("Submit")
 
 df=pd.DataFrame(glucose,bloodpressure,skin,insulin,predigree,age)
 
-##result=model.predict(df)
+result=model.predict(df)
 
-##if result==0:
-    ##st.write("You don't have diabetes. Congratulations!")
-##else:
-    ##st.write("You have diabetes. Take care.")
+if result==0:
+    st.write("You don't have diabetes. Congratulations!")
+else:
+    st.write("You have diabetes. Take care.")
