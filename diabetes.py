@@ -34,4 +34,9 @@ df=pd.DataFrame({'Pregnancies': pregnant, 'Glucose': glucose, 'BloodPressure': b
 
 result=model.predict(df)
 
-
+if result == [0]:
+  st.write('You do not have diabetes. Congratulations!')
+elif result == [1]:
+  st.write('You have diabetes. Take care!')
+else:
+  st.write('Cannot define')
