@@ -10,7 +10,7 @@ st.markdown(
   f"""
     <style>
      .stApp {{
-        background-image: url("https://www.news-medical.net/image.axd?picture=2019%2F8%2F%40shutterstock_1182539971.jpg");
+        background-image: url("https://www.endocrinologyadvisor.com/wp-content/uploads/sites/9/2021/05/diabetes_G_1153457602.jpg");
         background-attachment: fixed;
         background-size: cover}}
      </style>
