@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib 
 
-model = joblib.load'Diabetes Classification.sav')
+model = joblib.load('Diabetes Classification.sav')
 
 st.markdown(
   f"""
