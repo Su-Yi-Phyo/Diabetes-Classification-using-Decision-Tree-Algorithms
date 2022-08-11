@@ -37,6 +37,6 @@ result=model.predict(df)
 if result == [0]:
   st.markdown(f'<h1 style="color:green;font-size:24px;">You do not have diabetes. Congratulations!</h1>', unsafe_allow_html=True)
 elif result == [1]:
-  st.markdown(f'<h1 style="color:green;font-size:24px;">You have diabetes. Take care!</h1>', unsafe_allow_html=True)
+  st.markdown(f'<h1 style="color:red;font-size:24px;">You have diabetes. Take care!</h1>', unsafe_allow_html=True)
 else:
-  st.markdown(f'<h1 style="color:green;font-size:24px;">Cannot define</h1>', unsafe_allow_html=True)
+  st.markdown(f'<h1 style="color:gray;font-size:24px;">Cannot define</h1>', unsafe_allow_html=True)
