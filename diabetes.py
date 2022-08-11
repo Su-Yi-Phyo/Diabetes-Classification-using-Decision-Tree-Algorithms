@@ -29,7 +29,8 @@ predigree = st.text_input("Diabetes Predigree Function:")
 age = st.text_input("Age:")
 submit = st.button("Submit")
 
-df=pd.DataFrame(preganant,glucose,bloodpressure,skin,insulin,predigree,age)
+data = [preganant,glucose,bloodpressure,skin,insulin,predigree,age]
+df=pd.DataFrame(data)
 
 result=model.predict(df)
 
