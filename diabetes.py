@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 import pickle
+import sklearn 
 
 model = pickle.load(open('Diabetes Classification.sav','rb'))
 
