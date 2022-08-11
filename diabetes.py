@@ -30,7 +30,7 @@ predigree = st.number_input("Diabetes Predigree Function:")
 age = st.number_input("Age:")
 submit = st.button("Submit")
 
-data = {'Pregnancies': pregnant, 'Glucose': glucose, 'BloodPressure': bloodpressure, 'SkinThickness': skin, 'Insulin': insulin, 'BMI': bmi, 'DiabetesPedigreeFunction': predigree, 'Age': age}
+data = ({'Pregnancies': pregnant, 'Glucose': glucose, 'BloodPressure': bloodpressure, 'SkinThickness': skin, 'Insulin': insulin, 'BMI': bmi, 'DiabetesPedigreeFunction': predigree, 'Age': age}, index=[0])
 df=pd.DataFrame(data)
 
 result=model.predict(df)
