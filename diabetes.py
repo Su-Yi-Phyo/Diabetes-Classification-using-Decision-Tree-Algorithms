@@ -20,6 +20,7 @@ st.title("Diabetes Testing System")
 st.write("Do you want to test whether you have diabetes or not?")
 st.write("Test HERE!")
 
+preganant=st.text_input("Number of times preganant:")
 glucose = st.text_input("Glucose Rate:")
 bloodpressure = st.text_input("Blood Pressure:")
 skin = st.text_input("Skin Thickness:")
@@ -28,7 +29,7 @@ predigree = st.text_input("Diabetes Predigree Function:")
 age = st.text_input("Age:")
 submit = st.button("Submit")
 
-df=pd.DataFrame(glucose,bloodpressure,skin,insulin,predigree,age)
+df=pd.DataFrame(preganant,glucose,bloodpressure,skin,insulin,predigree,age)
 
 result=model.predict(df)
 
