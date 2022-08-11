@@ -20,16 +20,17 @@ st.title("Diabetes Testing System")
 st.write("Do you want to test whether you have diabetes or not?")
 st.write("Test HERE!")
 
-preganant=st.number_input("Number of times preganant:")
+pregnant=st.number_input("Number of times preganant:")
 glucose = st.number_input("Glucose Rate:")
 bloodpressure = st.number_input("Blood Pressure:")
 skin = st.number_input("Skin Thickness:")
 insulin = st.number_input("Insulin:")
+bmi = st.number_input("BMI:")
 predigree = st.number_input("Diabetes Predigree Function:")
 age = st.number_input("Age:")
 submit = st.button("Submit")
 
-data = [preganant,glucose,bloodpressure,skin,insulin,predigree,age]
+data = {'Pregnancies': pregnant, 'Glucose': glucose, 'BloodPressure': bloodpressure, 'SkinThickness': skin, 'Insulin': insulin, 'BMI': bmi, 'DiabetesPedigreeFunction': predigree, 'Age': age}
 df=pd.DataFrame(data)
 
 result=model.predict(df)
